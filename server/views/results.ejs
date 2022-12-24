@@ -1,0 +1,12 @@
+<% doggy.forEach(el =>{ %>
+    <div>
+      <h2><%= el.title %></h2>
+      <img src="<%= `https://image.tmdb.org/t/p/w200${el.poster_path}` %>" 
+            alt="<%= el.title %>">
+      <p>  <%= el.overview %>   </p>
+      <form>
+        <button formaction="/showDetails/<%= el.id %>">Get Reviews</button>
+      </form>
+      
+    </div>
+    <%})%>
