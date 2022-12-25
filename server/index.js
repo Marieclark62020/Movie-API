@@ -9,7 +9,7 @@ require('dotenv').config()
 let {TMDB_API_KEY}= process.env
 
 
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 
 
